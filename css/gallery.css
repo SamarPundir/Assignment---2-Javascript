@@ -1,0 +1,78 @@
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+h1 {
+    text-align: center;
+    color: #bb86fc;
+}
+
+#gallery {
+    width: 90%;
+    margin: 0 auto;
+}
+
+#gallery figure {
+    position: relative;
+    height: 350px;
+    overflow: hidden;
+    border-color: #333;
+    border-radius: 15px;
+    border-width: 8px;
+    border-style: solid;
+}
+
+#gallery figure img {
+    width: 100%;
+    transition: transform 0.3s ease-in-out;
+}
+
+#gallery figure:hover img {
+    transform: scale(1.15);
+}
+
+#gallery ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 0;
+}
+
+#gallery ul li {
+    flex-basis: 22%;
+    margin-bottom: 15px;
+}
+
+#gallery ul li img {
+    width: 100%;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    border-radius: 15px;
+    border-width: 8px;
+    border-style: inherit;
+}
+
+#gallery ul li:hover img {
+    transform: scale(1.15);
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #03dac6;
+    color: #000;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 12px 0;
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #bb86fc; 
+    color: #000;
+}
